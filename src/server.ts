@@ -9,8 +9,9 @@ import { authRoutes } from './routes/auth'
 const app = fastify()
 
 app.register(cors, {
-  origin: true,
+  // origin: true,
   // origin: ['http://localhost:3000', 'http://rocketseat.com.br/'],
+  origin: ['http://localhost:3000'],
 })
 
 app.register(jwt, {
